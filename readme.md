@@ -7,7 +7,5 @@
 
 This Project is part of the Udemy course "React & Django Full Stack: web app, backend API, mobile apps" by Krystian Czekalski.
 
-API: Django 3.1.4, Python 3.9.1
+API: Django 3.1.4, Python 3.9.1  
 FE: React JS
-
-
