@@ -28,7 +28,12 @@ SECRET_KEY = config("SECRET_KEY")
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = config("DEBUG")
 
-ALLOWED_HOSTS = ["192.168.100.13", "127.0.0.1", "localhost"]
+ALLOWED_HOSTS = [
+    "192.168.100.13",
+    "127.0.0.1",
+    "localhost",
+    "darky-movie-rater.herokuapp.com",
+]
 
 # Rest Framework
 
