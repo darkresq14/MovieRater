@@ -25,7 +25,7 @@ SECRET_KEY = "m1oa1&q@9t#w*qzq#a-427r84so#@p#cv*zess9o3uqcmu)$v)"
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ["192.168.100.13", "127.0.0.1", "localhost"]
 
 # Rest Framework
 
@@ -34,6 +34,20 @@ REST_FRAMEWORK = {
         "rest_framework.permissions.IsAuthenticated",
     ]
 }
+
+# CORS
+
+# https://github.com/adamchainz/django-cors-headers
+# Django Cors Headers
+
+CORS_ALLOWED_ORIGINS = [
+    "http://localhost:3000",
+    # "http://localhost:19000",
+    # "http://localhost:19002",
+    # "http://192.168.100.13:19000",
+    # "https://192.168.100.13:19002",
+    # "exp://192.168.100.13:19000",
+]
 
 # Application definition
 
@@ -46,12 +60,14 @@ INSTALLED_APPS = [
     "django.contrib.staticfiles",
     "rest_framework",
     "rest_framework.authtoken",
+    "corsheaders",
     "api",
 ]
 
 MIDDLEWARE = [
     "django.middleware.security.SecurityMiddleware",
     "django.contrib.sessions.middleware.SessionMiddleware",
+    "corsheaders.middleware.CorsMiddleware",
     "django.middleware.common.CommonMiddleware",
     "django.middleware.csrf.CsrfViewMiddleware",
     "django.contrib.auth.middleware.AuthenticationMiddleware",
