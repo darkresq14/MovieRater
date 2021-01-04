@@ -9,3 +9,4 @@ This Project is part of the Udemy course "React & Django Full Stack: web app, ba
 
 API: Django 3.1.4, Python 3.9.1  
 FE: ReactJS 17.0.1
+
