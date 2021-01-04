@@ -55,6 +55,8 @@ CORS_ALLOWED_ORIGINS = [
     # "http://192.168.100.13:19000",
     # "https://192.168.100.13:19002",
     # "exp://192.168.100.13:19000",
+    "https://movie-rater-bb241.firebaseapp.com",
+    "https://movie-rater-bb241.web.app",
 ]
 
 # Application definition
