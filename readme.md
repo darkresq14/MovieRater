@@ -8,4 +8,4 @@
 This Project is part of the Udemy course "React & Django Full Stack: web app, backend API, mobile apps" by Krystian Czekalski.
 
 BE: Rest API - Django 3.1.4, Python 3.9.1 hosted on [heroku](https://darky-movie-rater.herokuapp.com)  
-FE: ReactJS 17.0.1
+FE: ReactJS 17.0.1 hosted on [firebase](https://movie-rater-bb241.firebaseapp.com)
